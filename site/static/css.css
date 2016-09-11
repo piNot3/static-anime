@@ -1,0 +1,237 @@
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 300;
+	src: url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfT8E0i7KZn-EPnyo3HZu7kw.woff) format("woff");
+}
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/roboto/v15/2UX7WLTfW3W8TclTUvlFyQ.woff) format("woff");
+}
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUT8E0i7KZn-EPnyo3HZu7kw.woff) format("woff");
+}
+@font-face {
+  font-family: "Lobster";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lobster/v18/MWVf-Rwh4GLQVBEwbyI61Q.woff) format('woff');
+}
+
+body,hr,h1,h2,h3,ul,p {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	padding-top: 65px;
+	padding-bottom: 15px;
+	font-family: roboto;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+.header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+	border-bottom: 1px solid #eee;
+	background-color: #fff;
+	z-index: 1;
+}
+
+.header a {
+	transition: 0.3s;
+}
+
+.header a:hover {
+    filter: drop-shadow(0px 0px 3px #ccc);
+}
+
+.header a img {
+	padding: 5px 0px;
+}
+
+.header a:active {
+	border-color: #4387fd;
+}
+
+.header a div {
+	margin-top: 165px;
+	padding-top: 15px;
+	text-align: center;
+	background-color: white;
+	border-radius: 50% 50% 0px 0px;
+}
+
+.header a div:after {
+	position: relative;
+	top: -5px;
+	content: "Quand les animes deviennent fun à regarder… en vostfr biensûr!";
+	color: #777;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.list a {
+	display: block;
+	margin: 25px;
+	padding: 10px 15px;
+	color: #333;
+	transition: 0.3s;
+	background-color: #e5e5e5;
+	border: 2px solid #e5e5e5;
+}
+
+.list a:hover {
+	border-color: #72a5f7;
+}
+
+.list a img {
+	float: left;
+	margin-right: 15px;
+	border-radius: 25px;
+	transition: 0.3s;
+}
+
+.list a h3 {
+	font-size: large;
+	line-height: 30px;
+}
+
+.list a p {
+	font-weight: 300;
+	font-size: small;
+	line-height: 20px;
+}
+
+.infos {
+	margin: 15px 0px;
+	font-size: 35px;
+	font-family: lobster;
+}
+
+.line {
+	height: 1px;
+	background-color: #ddd;
+}
+
+.back {
+	float: right;
+	padding: 20px 0px;
+	padding: 10px 15px;
+	margin-top: 22px;
+	font-size: 17px;
+	transition: 0.3s;
+	background-color: #e5e5e5;
+	border: 2px solid #e5e5e5;
+}
+
+.back:hover {
+	cursor: pointer;
+	border-color: #72a5f7;
+}
+
+.cover {
+	position: relative;
+	padding-bottom: 56.25%;
+	background-position: center;
+	background-size: cover;
+	opacity: 0.9;
+	transition: opacity 0.3s;
+}
+
+.cover:hover {
+	opacity: 1;
+	cursor: crosshair;
+}
+
+.players div {
+	position: relative;
+	padding-bottom: 56.25%;
+}
+
+.players div iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+.season {
+	display: block;
+	position: relative;
+	padding: 10px 15px;
+	margin-top: 15px;
+	font-size: 17px;
+	background-color: #e5e5e5;
+	transition: 0.3s;
+	border: 2px solid #e5e5e5;
+}
+
+.season:hover {
+	border-color: #72a5f7;
+}
+
+.season:after {
+	content: "";
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 40px;
+	height: 40px;
+	background-image: url(/static/arrow.bmp);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.season:hover {
+	color: #111;
+	cursor: pointer;
+}
+
+.episodes {
+	height: 0px;
+	overflow: hidden;
+	counter-reset: list;
+	transition: height 0.5s;
+}
+
+.episodes a {
+	display: block;
+	margin: 10px 15px;
+	transition: opacity 0.3s;
+	text-decoration: none;
+}
+
+.episodes a:before {
+	counter-increment: list;
+    content: counter(list) ": ";
+}
+
+.episodes a:hover {
+	text-decoration: underline;
+}
+
+@media screen and (min-width: 701px) {
+	body {
+		margin: 0px auto;
+		width: 700px;
+	}
+}
+
+.active {
+	opacity: 0.6;
+}
+
+/* f2f2f2 757575 e5e5e5 ff3e3e eee 111 777 */

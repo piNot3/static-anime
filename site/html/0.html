@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<title>vANIME</title>
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Regarder vos animes préférés en streaming sur notre site web préféré! (vANIME biensûr!)">
+		<link rel="stylesheet" href="/static/css.css">
+	</head>
+	<body>
+
+		<div class="header">
+			<a href="/" onclick="a(this);return false">
+				<img src="/static/logo.bmp" height="50">
+			</a>
+		</div>
+
+		<div class="list">
+			{{#.}}
+			<a href="/{{0}}/">
+				<img src="/static/{{0}}.bmp" width="50" height="50">
+				<h3>{{1}}</h3>
+				<p>{{2}}</p>
+			</a>
+			{{/.}}
+		</div>
+
+		<script src="/static/0.js"></script>
+
+	</body>
+</html>
