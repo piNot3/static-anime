@@ -1,38 +1,37 @@
 <!doctype html>
 <html>
-	<head>
-		<title>vANIME | {{b}}</title>
-		<meta name="viewport" content="width=device-width">
-		<meta name="description" content="Regarder {{b}} en vostfr sur notre site web préféré!">
-		<link rel="stylesheet" href="/static/css.css">
-	</head>
-	<body>
+    <head>
+        <title>vANIME | {{b}}</title>
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Regarder {{b}} en vostfr sur notre site web préféré!">
+        <link rel="stylesheet" href="/static/css.css">
+    </head>
+    <body>
 
-		<div class="header">
-			<a href="/" onclick="a(this);return false">
-				<img src="/static/logo.bmp" height="50">
-			</a>
-		</div>
+        <div class="header">
+            <a href="/">
+                <img src="/static/logo.bmp" height="50">
+            </a>
+        </div>
 
-		<div class="infos">{{b}} · {{c}}</div>
+        <div class="infos">{{b}} · {{c}}</div>
 
-		<div class="line"></div>
+        <div class="line"></div>
 
-		<!--PLACE TITLE HERE WITH JS-->
+        <!--PLACE TITLE HERE WITH JS-->
 
-		<div class="cover" style="background-image:url(/static/{{a}}.jpg)"></div>
+        <div class="cover" style="background-image:url(/static/{{a}}.jpg)"></div>
 
-		{{#d}}
-		<span class="season">{{season}}</span>
-		<div class="episodes">
-			{{#list}}
-				<a href="{{episode}}/">{{title}}</a>
-			{{/list}}
-		</div>
-		{{/d}}
+        {{#d}}
+        <span class="season">{{season}}</span>
+        <div class="episodes">
+            {{#list}}
+                <a href="{{episode}}/">{{title}}</a>
+            {{/list}}
+        </div>
+        {{/d}}
 
-		<script src="/static/0.js"></script>
-		<script src="/static/1.js"></script>
+        <script src="/static/js.js"></script>
 
-	</body>
+    </body>
 </html>

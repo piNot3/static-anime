@@ -1,56 +1,56 @@
 <!doctype html>
 <html>
-	<head>
-		<title>vANIME | {{anime}} · {{episode}}. {{title}}</title>
-		<meta name="viewport" content="width=device-width">
-		<meta name="description" content="{{anime}}  en vostfr · {{title}}">
-		<link rel="stylesheet" href="/static/css.css">
-	</head>
-	<body>
+    <head>
+        <title>vANIME | {{anime}} · {{episode}}. {{title}}</title>
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="{{anime}}  en vostfr · {{title}}">
+        <link rel="stylesheet" href="/static/css.css">
+    </head>
+    <body>
 
-		<div class="header">
-			<a href="/" onclick="a(this);return false">
-				<img src="/static/logo.bmp" height="50">
-			</a>
-		</div>
+        <div class="header">
+            <a href="/">
+                <img src="/static/logo.bmp" height="50">
+            </a>
+        </div>
 
-		<a class="back" onclick="back()">Retour</a>
+        <a class="back">Retour</a>
 
-		<div class="infos">{{anime}} · {{episode}}. {{title}}</div>
+        <div class="infos">{{anime}} · {{episode}}. {{title}}</div>
 
-		<div class="players">
-			{{#players.rutube}}
-			<div>
-				<iframe src="//rutube.ru/play/embed/{{{.}}}?&skinColor=ffffffa&sTitle=false&sAuthor=false/"></iframe>
-			</div>
-			{{/players.rutube}}
+        <div class="players">
+            {{#players.rutube}}
+            <div>
+                <iframe src="//rutube.ru/play/embed/{{{.}}}?&skinColor=ffffffa&sTitle=false&sAuthor=false/"></iframe>
+            </div>
+            {{/players.rutube}}
 
-			{{#players.openload}}
-			<div>
-				<iframe src="//openload.co/embed/{{{.}}}/"></iframe>
-			</div>
-			{{/players.openload}}
+            {{#players.openload}}
+            <div>
+                <iframe src="//openload.co/embed/{{{.}}}/"></iframe>
+            </div>
+            {{/players.openload}}
 
-			{{#players.vk}}
-			<div>
-				<iframe src="//vk.com/video_ext.php?{{{.}}}&hd=1/"></iframe>
-			</div>
-			{{/players.vk}}
+            {{#players.vk}}
+            <div>
+                <iframe src="//vk.com/video_ext.php?{{{.}}}&hd=1/"></iframe>
+            </div>
+            {{/players.vk}}
 
-			{{#players.ok}}
-			<div>
-				<iframe src="//ok.ru/videoembed/{{{.}}}/"></iframe>
-			</div>
-			{{/players.ok}}
+            {{#players.ok}}
+            <div>
+                <iframe src="//ok.ru/videoembed/{{{.}}}/"></iframe>
+            </div>
+            {{/players.ok}}
 
-			{{#players.kiwi}}
-			<div>
-				<iframe src="//v.kiwi.kz/v2/{{{.}}}/"></iframe>
-			</div>
-			{{/players.kiwi}}
-		</div>
+            {{#players.kiwi}}
+            <div>
+                <iframe src="//v.kiwi.kz/v2/{{{.}}}/"></iframe>
+            </div>
+            {{/players.kiwi}}
+        </div>
 
-		<script src="/static/2.js"></script>
+        <script src="/static/js.js"></script>
 
-	</body>
+    </body>
 </html>

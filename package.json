@@ -8,7 +8,7 @@
     "1": "node app.js 1",
     "2": "node app.js 2",
     "css": "node_modules/.bin/cleancss -o public/static/css.css site/static/css.css",
-    "js": "for %g in (site/static/*.js) do @\"node_modules/.bin/uglifyjs\" -o public/static/%g site/static/%g"
+    "js": "node_modules/.bin/uglifyjs -o public/static/js.js site/static/js.js"
   },
   "repository": {
     "type": "git",
