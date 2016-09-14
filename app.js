@@ -88,14 +88,10 @@ var app = {
     }
 }
 
-if(process.argv[2] == "1" && process.argv[3] == undefined) {
-    console.log("Not enough parameter(s)");
-    console.log("> npm run 1 -- some-anime");
-    process.exit();
-} else if(process.argv[2] == "2" && process.argv[3] == undefined && process.argv[4] == undefined) {
-    console.log("Not enough parameter(s)");
-    console.log("> npm run 2 -- some-anime 1-1");
-    process.exit();
+if(process.argv[2]) {
+    app[2](process.argv[1], process.argv[2]);
+} else if(process.argv[1]) {
+   app[1](process.argv[1]);
+} else {
+    app[0]();
 }
-
-app[process.argv[2]](process.argv[3], process.argv[4])
