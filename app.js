@@ -88,10 +88,8 @@ var app = {
     }
 }
 
-if(process.argv[2]) {
-    app[2](process.argv[1], process.argv[2]);
-} else if(process.argv[1]) {
-   app[1](process.argv[1]);
-} else {
-    app[0]();
-}
+// 1 = path/to/app.js
+// 2 = 0 or 1 or 2
+// 3 = some-anime
+// 4 = 1-1
+app[process.argv[2]](process.argv[3], process.argv[4]);

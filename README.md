@@ -15,29 +15,29 @@ npm install
 Run this to render "index.html" under "public/"
 
 ```
-run
+static-anime
 ```
 
 Run this to render "index.html" under "public/some-anime/"
 
 ```
-run some-anime
+static-anime some-anime
 ```
 
 Run this to render "index.html" under "public/some-anime/1-1/"
 
 ```
-run some-anime 1-1
+static-anime some-anime 1-1
 ```
 
-Run this to render the css files under "public/static/"
+static-anime this to render the css files under "public/static/"
 
 ```
-run css
+static-anime css
 ```
 
 Run this to render the js files under "public/static/"
 
 ```
-run js
+static-anime js
 ```
