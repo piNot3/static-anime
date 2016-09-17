@@ -1,5 +1,1 @@
-{
-    "link": "some-anime",
-    "anime": "Some Anime",
-    "description": "1 Saisons * 1 Épisode"
-}
+function (err, result) { each(key, err, result) }
