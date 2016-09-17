@@ -21,6 +21,7 @@
   "dependencies": {
     "clean-css": "^3.4.19",
     "html-minifier": "^3.0.2",
+    "jsonfile": "^2.4.0",
     "mustache": "^2.2.1",
     "uglifyjs": "^2.4.10"
   }

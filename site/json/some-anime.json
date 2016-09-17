@@ -1,5 +1,5 @@
-[
-	"some-anime",
-	"Some Anime",
-	"1 Saisons * 1 Épisode"
-]
+{
+    "link": "some-anime",
+    "anime": "Some Anime",
+    "description": "1 Saisons * 1 Épisode"
+}
