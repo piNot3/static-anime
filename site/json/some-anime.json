@@ -1,1 +1,5 @@
-function (err, result) { each(key, err, result) }
+{
+    "link": "some-anime",
+    "anime": "Some Anime",
+    "description": "1 Saisons * 1 Épisode"
+}
